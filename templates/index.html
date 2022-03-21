@@ -29,9 +29,15 @@
 </head>
   
 <body>
-    <div>
-        <h1>Welcome!</h1><br>
-        <p>This site has been visited {{ count }} times.</p>
+<div>
+    <h1>Welcome!</h1><br>
+    <p>This site has been visited {{ count }} times.</p>
+    <p>You can type your messages here to other people</p>
+    <div class="column1">
+        <div class="input">
+        <button onclick="message()"> Send a Message </button>
+        <nav class="strong"><p id="output">	</p> </nav>
+      </div>
     </div>
 
 {% block body %}
