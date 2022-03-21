@@ -18,9 +18,10 @@ def index():
     f.write(str(count))
     f.close()
 
-    # Render HTML with count variable
-    return render_template("index.html", count=count)
+    msg = input("Please enter a message: ", "")
+    
+  # Render HTML with count variable
+    return render_template("index.html", count=count, msg=msg)
 
 if __name__ == "__main__":
     app.run()
-  
